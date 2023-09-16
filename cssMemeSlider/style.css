@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Kelly+Slab&family=Kulim+Park:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -100,8 +102,6 @@ h6 {
 
 .slider {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     width: 80%;
     height: 80%;
@@ -109,19 +109,23 @@ h6 {
     overflow: hidden;
     padding: 1em;
 }
+
 .slider input {
     display: none;
 }
+
 .slider__hidden {
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
+
 .slider__images {
     display: flex;
     height: 90%;
     width: 600%;
 }
+
 .slider__image {
     height: 100%;
     min-width: 16.666%;
@@ -129,40 +133,84 @@ h6 {
     justify-content: center;
     transition: all 1s ease;
 }
+
 .slider__image img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
-#cat1:checked~.slider__hidden .slider__images .image1 {
+
+#cat1:checked~.slider__images .image1 {
     margin-left: 0;
 }
 
-#cat2:checked~.slider__hidden .slider__images .image1 {
+#cat2:checked~.slider__images .image1 {
     margin-left: -16.666%;
 }
 
-#cat3:checked~.slider__hidden .slider__images .image1 {
+#cat3:checked~.slider__images .image1 {
     margin-left: -33.332%;
 }
 
-#cat4:checked~.slider__hidden .slider__images .image1 {
+#cat4:checked~.slider__images .image1 {
     margin-left: -49.998%;
 }
 
-#cat5:checked~.slider__hidden .slider__images .image1 {
+#cat5:checked~.slider__images .image1 {
     margin-left: -66.664%;
 }
 
-#cat6:checked~.slider__hidden .slider__images .image1 {
+#cat6:checked~.slider__images .image1 {
     margin-left: -83.33%;
 }
 
-.slider__description {}
+.slider__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider__description {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    font-family: 'Kulim Park', sans-serif;
+    letter-spacing: .1em;
+    font-size: 1.5em;
+    color: aliceblue;
+    overflow: hidden;
+}
+
+.slider__text {
+    min-width: 100%;
+    transition: all 1s ease;
+}
+
+#cat1:checked~.slider__info .slider__description .text1{
+    margin-left: 0;
+}
+#cat2:checked~.slider__info .slider__description .text1{
+    margin-left: -100%;
+}
+#cat3:checked~.slider__info .slider__description .text1{
+    margin-left: -200%;
+}
+#cat4:checked~.slider__info .slider__description .text1{
+    margin-left: -300%;
+}
+#cat5:checked~.slider__info .slider__description .text1{
+    margin-left: -400%;
+}
+#cat6:checked~.slider__info .slider__description .text1{
+    margin-left: -500%;
+}
+
+
 
 .slider__pagination {
     display: flex;
+    justify-content: flex-end;
 }
+
 .slider__pagination-btn {
     display: flex;
     justify-content: center;
@@ -172,6 +220,7 @@ h6 {
     background-color: transparent;
     cursor: pointer;
 }
+
 .slider__pagination-btn div {
     width: 1em;
     height: 1em;
@@ -179,32 +228,41 @@ h6 {
     background-color: aliceblue;
     transition: all .2s ease;
 }
+
 .slider__pagination-btn:hover .slider__pagination-circle {
     background-color: #300c0c;
     transform: scale(0.9);
 }
+
 .slider__pagination-btn:active .slider__pagination-circle {
     background-color: #300c0c;
     transform: scale(0.7);
 }
+
 .slider__pagination-btn:active div {
     transform: scale(1.2);
 }
-#cat1:checked~.slider__pagination .slider__pagination-btn .btn1 {
+
+#cat1:checked~.slider__info .slider__pagination .slider__pagination-btn .btn1 {
     background-color: rgba(134, 48, 52, 0.692);
 }
-#cat2:checked~.slider__pagination .slider__pagination-btn .btn2 {
+
+#cat2:checked~.slider__info .slider__pagination .slider__pagination-btn .btn2 {
     background-color: rgba(134, 48, 52, 0.692);
 }
-#cat3:checked~.slider__pagination .slider__pagination-btn .btn3 {
+
+#cat3:checked~.slider__info .slider__pagination .slider__pagination-btn .btn3 {
     background-color: rgba(134, 48, 52, 0.692);
 }
-#cat4:checked~.slider__pagination .slider__pagination-btn .btn4 {
+
+#cat4:checked~.slider__info .slider__pagination .slider__pagination-btn .btn4 {
     background-color: rgba(134, 48, 52, 0.692);
 }
-#cat5:checked~.slider__pagination .slider__pagination-btn .btn5 {
+
+#cat5:checked~.slider__info .slider__pagination .slider__pagination-btn .btn5 {
     background-color: rgba(134, 48, 52, 0.692);
 }
-#cat6:checked~.slider__pagination .slider__pagination-btn .btn6 {
+
+#cat6:checked~.slider__info .slider__pagination .slider__pagination-btn .btn6 {
     background-color: rgba(134, 48, 52, 0.692);
 }
