@@ -107,7 +107,7 @@ h6 {
     height: 80%;
     background-color: #300c0c;
     overflow: hidden;
-    padding: 2em;
+    padding: 1em;
 }
 .slider input {
     display: none;
@@ -133,6 +133,29 @@ h6 {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+#cat1:checked~.slider__hidden .slider__images .image1 {
+    margin-left: 0;
+}
+
+#cat2:checked~.slider__hidden .slider__images .image1 {
+    margin-left: -16.666%;
+}
+
+#cat3:checked~.slider__hidden .slider__images .image1 {
+    margin-left: -33.332%;
+}
+
+#cat4:checked~.slider__hidden .slider__images .image1 {
+    margin-left: -49.998%;
+}
+
+#cat5:checked~.slider__hidden .slider__images .image1 {
+    margin-left: -66.664%;
+}
+
+#cat6:checked~.slider__hidden .slider__images .image1 {
+    margin-left: -83.33%;
 }
 
 .slider__description {}
@@ -166,4 +189,22 @@ h6 {
 }
 .slider__pagination-btn:active div {
     transform: scale(1.2);
+}
+#cat1:checked~.slider__pagination .slider__pagination-btn .btn1 {
+    background-color: rgba(134, 48, 52, 0.692);
+}
+#cat2:checked~.slider__pagination .slider__pagination-btn .btn2 {
+    background-color: rgba(134, 48, 52, 0.692);
+}
+#cat3:checked~.slider__pagination .slider__pagination-btn .btn3 {
+    background-color: rgba(134, 48, 52, 0.692);
+}
+#cat4:checked~.slider__pagination .slider__pagination-btn .btn4 {
+    background-color: rgba(134, 48, 52, 0.692);
+}
+#cat5:checked~.slider__pagination .slider__pagination-btn .btn5 {
+    background-color: rgba(134, 48, 52, 0.692);
+}
+#cat6:checked~.slider__pagination .slider__pagination-btn .btn6 {
+    background-color: rgba(134, 48, 52, 0.692);
 }
