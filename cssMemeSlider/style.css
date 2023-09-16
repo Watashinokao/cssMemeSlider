@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+
+*,
+:after,
+:before {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+:active {
+    outline: none
+}
+
+
+a:active {
+    outline: none
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    line-height: 1;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+    display: none
+}
+
+button {
+    cursor: pointer
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+a:hover {
+    text-decoration: none
+}
+
+ul li {
+    list-style: none
+}
+
+img {
+    vertical-align: top
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    background-color: #300c0c;
+    overflow: hidden;
+    padding: 2em;
+}
+.slider input {
+    display: none;
+}
+.slider__hidden {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.slider__images {
+    display: flex;
+    height: 90%;
+    width: 600%;
+}
+.slider__image {
+    height: 100%;
+    min-width: 16.666%;
+    display: flex;
+    justify-content: center;
+    transition: all 1s ease;
+}
+.slider__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.slider__description {}
+
+.slider__pagination {
+    display: flex;
+}
+.slider__pagination-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2em;
+    height: 2em;
+    background-color: transparent;
+    cursor: pointer;
+}
+.slider__pagination-btn div {
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: aliceblue;
+    transition: all .2s ease;
+}
+.slider__pagination-btn:hover .slider__pagination-circle {
+    background-color: #300c0c;
+    transform: scale(0.9);
+}
+.slider__pagination-btn:active .slider__pagination-circle {
+    background-color: #300c0c;
+    transform: scale(0.7);
+}
+.slider__pagination-btn:active div {
+    transform: scale(1.2);
+}
