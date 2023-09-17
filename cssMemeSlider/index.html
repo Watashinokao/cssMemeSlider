@@ -3,9 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link type="image/png" sizes="16x16" rel="icon" href="./images/favicon16.png">
+    <link type="image/png" sizes="32x32" rel="icon" href="./images/favicon32.png">
+    <link type="image/png" sizes="96x96" rel="icon" href="./images/favicon96.png">
     <title>Meme Slider</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <div class="slider">
+            <div class="slider__hidden">
+                <input name="slide" id="cat1" type="radio" checked>
+                <input name="slide" id="cat2" type="radio">
+                <input name="slide" id="cat3" type="radio">
+                <input name="slide" id="cat4" type="radio">
+                <input name="slide" id="cat5" type="radio">
+                <input name="slide" id="cat6" type="radio">
+                <div class="slider__images">
+                    <div class="slider__image image1"> <img src="./images/cat1.jpg" alt="mem"> </div>
+                    <div class="slider__image image2"> <img src="./images/cat2.jpg" alt="mem"> </div>
+                    <div class="slider__image image3"> <img src="./images/cat3.jpg" alt="mem"> </div>
+                    <div class="slider__image image4"> <img src="./images/cat4.jpg" alt="mem"> </div>
+                    <div class="slider__image image5"> <img src="./images/cat5.jpg" alt="mem"> </div>
+                    <div class="slider__image image6"> <img src="./images/cat6.png" alt="mem"> </div>
+                </div>
+                <div class="slider__info">
+                    <div class="slider__description">
+                        <div class="slider__text text1">Гладь давай!</div>
+                        <div class="slider__text text2">Помни, ты тоже кот.</div>
+                        <div class="slider__text text3">Никаких незрелых маслин!</div>
+                        <div class="slider__text text4">Сильно не обиделась?</div>
+                        <div class="slider__text text5">Выпью кофе и буду...</div>
+                        <div class="slider__text text6">Если я один попрошу?</div>
+                    </div>
+                    <div class="slider__pagination">
+                        <label class="slider__pagination-btn" for="cat1">
+                            <div>
+                                <div class="slider__pagination-circle btn1"></div>
+                            </div>
+                        </label>
+                        <label class="slider__pagination-btn" for="cat2">
+                            <div>
+                                <div class="slider__pagination-circle btn2"></div>
+                            </div>
+                        </label>
+                        <label class="slider__pagination-btn" for="cat3">
+                            <div>
+                                <div class="slider__pagination-circle btn3"></div>
+                            </div>
+                        </label>
+                        <label class="slider__pagination-btn" for="cat4">
+                            <div>
+                                <div class="slider__pagination-circle btn4"></div>
+                            </div>
+                        </label>
+                        <label class="slider__pagination-btn" for="cat5">
+                            <div>
+                                <div class="slider__pagination-circle btn5"></div>
+                            </div>
+                        </label>
+                        <label class="slider__pagination-btn" for="cat6">
+                            <div>
+                                <div class="slider__pagination-circle btn6"></div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 </body>
 </html>
